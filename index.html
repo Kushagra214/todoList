@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="app.js"></script>
+	<title>To Do List</title>
+</head>
+
+<body onload="displayItem()">
+	<h1>To Do List</h1>
+	<h2 class="header">Tasks left :</h2>
+	<ul id='display'></ul>
+
+	<button id="addtask" onclick="addFunction()">Add task</button>
+	<button id="removetask" onclick="removeFunction()">Remove task</button>
+
+	<div id="removeItem">
+		<label>Enter the task number to be removed</label>
+		<input type="number" id="taskNo" placeholder="Task Number">
+		<button onclick="removeElement()" class="removeBtn">Remove</button>
+	</div>
+
+	<div id="addItem">
+		<h2>Add Item</h2>
+		<form class="addform" method="post">
+			<div class="row">
+				<label>Enter Date</label>
+				<input type="text" id="date" placeholder="dd/mm/yy">
+			</div>
+			<div class="row">
+				<label>Enter Time</label>
+				<input type="text" id="time" placeholder="00:00">
+				<select id = "ampm" >
+					<option value="am">AM</option>
+					<option value="pm">PM</option>
+				</select>
+			</div>
+			<div class="row">
+				<label>Task Name</label>
+				<input type="text" id="titleInput" placeholder="Add item...">
+			</div>
+			<div class="row">
+	  			<button onclick="addElement()" class="addBtn">Add</button>
+	  		</div>
+	  	</form>
+	</div>
+
+
+
+</body>
+</html>

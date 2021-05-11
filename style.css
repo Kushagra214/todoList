@@ -1,0 +1,93 @@
+* {
+	padding: 20px;
+  	box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+.row{
+    max-width: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-top: 10px;	
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1{
+	text-align: center;
+	align-content: center;
+}
+
+#addItem, #removeItem{
+	display: none;
+}
+
+#removetask, #addtask{
+	margin-top: 20px;
+	padding: 10px;
+	width: 10%;
+	background: orange;
+	color: black;
+	text-align: center;
+	font-size: 16px;
+}
+
+#ampm, #time, #date, #taskNo{
+  	width: auto;
+  	padding: 10px;
+  	font-size: 16px;
+}
+
+/* Style the input */
+#titleInput {
+	width: auto;
+	padding: 10px;
+	font-size: 16px;
+}
+
+/* Style the "Add" button */
+.removeBtn, .addBtn {
+	padding: 10px;
+	width: auto;
+	background: orange;
+	color: black;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: yellow;
+}
